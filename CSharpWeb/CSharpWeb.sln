@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigTask", "ConfigTask\ConfigTask.csproj", "{D5191FC9-F268-437C-8F43-49E2940E5DE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTask", "TestTask\TestTask.csproj", "{21384EA2-0BD1-477D-99CC-A16442E1064A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelTask", "ExcelTask\ExcelTask.csproj", "{E346355D-27D4-4836-B4B3-A74DA5C73FE2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5191FC9-F268-437C-8F43-49E2940E5DE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5191FC9-F268-437C-8F43-49E2940E5DE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5191FC9-F268-437C-8F43-49E2940E5DE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5191FC9-F268-437C-8F43-49E2940E5DE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21384EA2-0BD1-477D-99CC-A16442E1064A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21384EA2-0BD1-477D-99CC-A16442E1064A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21384EA2-0BD1-477D-99CC-A16442E1064A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21384EA2-0BD1-477D-99CC-A16442E1064A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E346355D-27D4-4836-B4B3-A74DA5C73FE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E346355D-27D4-4836-B4B3-A74DA5C73FE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E346355D-27D4-4836-B4B3-A74DA5C73FE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E346355D-27D4-4836-B4B3-A74DA5C73FE2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C1BF9A8D-45CC-4522-8F04-34457120D003}
+	EndGlobalSection
+EndGlobal
