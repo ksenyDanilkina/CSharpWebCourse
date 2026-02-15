@@ -1,4 +1,4 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35027.167
@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigTask", "ConfigTask\Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTask", "TestTask\TestTask.csproj", "{21384EA2-0BD1-477D-99CC-A16442E1064A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelTask", "ConsoleApp1\ExcelTask.csproj", "{83F651E2-7249-4514-A108-FFF989F07607}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelTask", "ExcelTask\ExcelTask.csproj", "{83F651E2-7249-4514-A108-FFF989F07607}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
