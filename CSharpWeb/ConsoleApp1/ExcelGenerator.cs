@@ -1,24 +1,23 @@
 ﻿using ClosedXML.Excel;
-using System.Collections.Generic;
 
 namespace ExcelTask
 {
     class ExcelGenerator
     {
-        public void Generator(List<Person> students)
+        public void GenerateStudentsTable(List<Person> students)
         {
             using (var workbook = new XLWorkbook())
             {
-                var headerParameters = new List<string> { "Имя: ", "Фамилия: ", "Возраст: ", "Телефон: " };
+                var headerNames = new List<string> { "Имя", "Фамилия", "Возраст", "Телефон" };
 
                 var worksheet = workbook.Worksheets.Add("Студенты");
 
                 var i = 1;
 
-                foreach (var e in headerParameters)
+                foreach (var name in headerNames)
                 {
                     var cell = worksheet.Cell(1, i);
-                    cell.Value = e;
+                    cell.Value = name;
 
                     var cellStyle = cell.Style;
                     cellStyle.Fill.BackgroundColor = XLColor.Azure;
