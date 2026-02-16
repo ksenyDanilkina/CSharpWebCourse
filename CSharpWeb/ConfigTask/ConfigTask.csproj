@@ -58,6 +58,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy C:\Users\hoste\source\repos\CSharpWebCourse\CSharpWeb\ConfigTask\bin\Debug C:\Users\hoste\OneDrive\Desktop\Data</PostBuildEvent>
+    <PostBuildEvent>xcopy $(TargetDir)ConfigTask.exe $(solutionDir)\..</PostBuildEvent>
   </PropertyGroup>
 </Project>

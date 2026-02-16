@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Configuration;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TestTask;
 
 namespace ConfigTask
@@ -12,19 +8,9 @@ namespace ConfigTask
     {
         static void Main(string[] args)
         {
-#if DEBUG
-            var point1 = new Point(3, 5);
+            var siteUrl = ConfigurationManager.AppSettings["SiteUrl"];
 
-            Console.WriteLine(point1);
-#else
-            Console.WriteLine("Неверная конфигурация");
-#endif
-
-            #region MyRegion
-
-            var point2 = new Point(1, 0);
-
-            #endregion
+            Console.WriteLine($"Адрес сайта: {siteUrl}");
         }
     }
 }
