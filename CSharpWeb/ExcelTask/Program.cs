@@ -7,4 +7,4 @@ var students = new List<Person>
     new Person("Марина", "Маринина", 30, "79996667788")
 };
 
-new ExcelGenerator().GenerateStudentsTable(students);
+new ExcelGenerator().GenerateStudentsTable(students, "StudentsData.xlsx");
