@@ -1,24 +1,22 @@
 ﻿using Newtonsoft.Json;
 using JSONTask.Models;
 
-const string filepath = "../../../countries.json";
+var filePath = Path.Combine("..", "..", "..", "countries.json");
 
-var jsonFile = File.ReadAllText(filepath);
+var jsonFileData = File.ReadAllText(filePath);
 
-var jsonData = JsonConvert.DeserializeObject<List<Country>>(jsonFile);
+var jsonData = JsonConvert.DeserializeObject<List<Country>>(jsonFileData);
 
-var population = jsonData?.Sum(country => country.Population);
+var totalPopulation = jsonData?.Sum(country => country.Population);
+Console.WriteLine($"Суммарная численность населения всех стран: {totalPopulation}");
 
-Console.WriteLine($"Суммарная популяция всех стран: {population}");
-
-var currencies = jsonData?
-    .Select(country => country.Currencies)
-    .SelectMany(currency => currency)
+var currencies = jsonData?.SelectMany(country => country.Currencies)
     .DistinctBy(currency => currency.Code)
     .ToList();
 
-Console.WriteLine("Список валют: ");
-foreach (var currency in currencies)
+Console.WriteLine("Список валют:");
+
+foreach (var currency in currencies!)
 {
     Console.WriteLine(currency);
 }
